@@ -3,6 +3,7 @@ from .summary.function import FunctionSummary
 from .summary.contract import ContractSummary
 from .summary.abstractness import Abstractness
 from .summary.loc import Loc
+from .summary.halstead import Halstead
 from .inheritance.inheritance import PrinterInheritance
 from .inheritance.inheritance_graph import PrinterInheritanceGraph
 from .call.call_graph import PrinterCallGraph
