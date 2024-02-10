@@ -105,7 +105,7 @@ def _get_evm_instructions_function(function_info):
     else:
         cfg = function_info["contract_info"]["cfg"]
         name = function.name
-        # Get first four bytes of function singature's keccak-256 hash used as function selector
+        # Get first four bytes of function signature's keccak-256 hash used as function selector
         func_hash = str(hex(get_function_id(function.full_name)))
 
     function_evm = _get_function_evm(cfg, name, func_hash)
